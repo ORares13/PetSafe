@@ -26,7 +26,7 @@ const TempViewer: React.FC<TempViewerProps> = ({ breed, species }) => {
     useEffect(() => {
         const fetchSensorData = async () => {
             try {
-                const response = await fetch('http://<raspberry_pi_ip>:5000/current');
+                const response = await fetch('http://192.168.1.245:5000/sensor');
                 const result = await response.json();
                 if (response.ok) {
                     setSensorData({
