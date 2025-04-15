@@ -5,16 +5,12 @@ export default function RootLayout() {
   return (
     <Stack>
       <Stack.Screen
-        name="index"
+        name="(tabs)"
         options={{
-          headerTitle: "Pet Safe",
+          headerShown: false,
         }}
       />
-      <Stack.Screen
-        name="about"
-        options={{
-          headerTitle: "About Page",
-        }}
+      <Stack.Screen name="+not-found" options={{}}
       />
     </Stack>
   );
